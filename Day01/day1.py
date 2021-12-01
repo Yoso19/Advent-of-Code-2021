@@ -1,5 +1,3 @@
-import collections
-from functools import reduce
 def part_1():
     report = [int(x) for x in open('day1.txt').readlines()]
     print('Part 1 solution:', sonar_sweep(report))
