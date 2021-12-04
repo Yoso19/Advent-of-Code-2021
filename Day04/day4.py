@@ -47,8 +47,8 @@ def giant_squid():
     for number in range(5, 102):
         numbers = drawn[0:number]
         for board in boards:
-            if board.check_if_winning(numbers):
-                if board not in winners:
+            if board not in winners:
+                if board.check_if_winning(numbers):
                     winners.append(board)
                     n.append(numbers)
     print(winners[0].board)
