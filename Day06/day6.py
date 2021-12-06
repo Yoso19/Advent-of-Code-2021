@@ -8,9 +8,8 @@ def lanternfish():
             new_counter[timer-1] = fish[timer]
         new_counter[8] = new_counter[-1]
         new_counter[6] += new_counter[-1]
-        del new_counter[-1]
         fish = new_counter
-    print(sum(fish.values()))
+    print(sum(fish.values())-new_counter[-1])
 
 
 if __name__ == '__main__':
